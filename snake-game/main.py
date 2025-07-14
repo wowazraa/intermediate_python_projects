@@ -2,7 +2,6 @@ from turtle import *
 from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
-import random
 import time
 
 screen = Screen()
@@ -45,8 +44,5 @@ while not is_over:
         if snake.head.distance(segment) < 10:
             is_over = True
             scoreboard.game_over()
-
-    # if the head collides with any segments in the tail
-        # trigger game over
 
 screen.exitonclick()
