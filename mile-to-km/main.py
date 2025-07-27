@@ -22,7 +22,7 @@ km = Label(text=0)
 km.grid(column=1, row=1)
 
 mile = Entry()
-mile.insert(END, text="0")
+mile.insert(END, string="0")
 mile.grid(column=1, row=0)
 
 button = Button(text="Calculate", command=convert)
